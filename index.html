@@ -12,59 +12,66 @@
 </head>
 <body>
     <header>
-        <div class="inicio"><span>Elliot smith</span> Fans</div>
-        <nav class="barra">
-            <ul>
-                <li> <a href="./index.html">Inicio</a></li>
-                <li> <a href="./Pages/login.html">Login</a></li>
-                <li> <a href="./Pages/albumes.html">Albumes</a></li>
-                <li> <a href="./Pages/comentarios.html">Comentarios</a></li>
-                <li> <a href="./Pages/ayuda.html">Ayuda</a></li>
-            </ul>
-        </nav>
+        <!-- Navbar BS 5.3 Inicio -->
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Elliott Smith Fans</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Pages/login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Pages/albumes.html">Albumes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Pages/comentarios.html">Comentarios</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ayuda
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Pages/ayuda.html">Contactanos</a></li>
+                      <li><a class="dropdown-item" href="https://elliottsmith.co/">Sitio Oficial de Elliott Smith</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- Navbar BS 5.3 Fin -->
     </header>
     <main>
-        <div id="contentItemsCarrusel">
-            <div class="ItemCarrusel" id="ItemCarrusel-1">
-                <div class="TarjetaCarrusel" id="TarjetaCarrusel-1">
-                    <img src="./Resources/img es/elliot1.webp" alt="item-1-Carrusel">
+        <!-- Carrusel BS 5.3 Inicio -->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Resources/img es/elliot1.webp" class="d-block w-100" alt="item-1-Carrusel">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Resources/img es/elliott-smith-1997-1200x815.jpeg" class="d-block w-100" alt="item-2-Carrusel">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Resources/img es/Elliott-Smith-GettyImages-86138497-1000x600.webp" class="d-block w-100" alt="item-3-Carrusel">
+                  </div>
                 </div>
-                <div class="FlechasCarrusel">
-                    <a href="#ItemCarrusel-3">
-                        <i class="fa-solid fa-arrow-left-long"></i>
-                    </a>
-                    <a href="#ItemCarrusel-2">
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="ItemCarrusel" id="ItemCarrusel-2">
-                <div class="TarjetaCarrusel" id="TarjetaCarrusel-2">
-                    <img src="./Resources/img es/elliott-smith-1997-1200x815.jpeg" alt="item-2-Carrusel">
-                </div>
-                <div class="FlechasCarrusel">
-                    <a href="#ItemCarrusel-1">
-                        <i class="fa-solid fa-arrow-left-long"></i>
-                    </a>
-                    <a href="#ItemCarrusel-3">
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="ItemCarrusel" id="ItemCarrusel-3">
-                <div class="TarjetaCarrusel" id="TarjetaCarrusel-3">
-                    <img src="./Resources/img es/Elliott-Smith-GettyImages-86138497-1000x600.webp" alt="item-3-Carrusel">
-                </div>
-                <div class="FlechasCarrusel">
-                    <a href="#ItemCarrusel-2">
-                        <i class="fa-solid fa-arrow-left-long"></i>
-                    </a>
-                    <a href="#ItemCarrusel-1">
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        <!-- Carrusel BS 5.3 Fin -->
     </main>
     <article>
         <h2 id="sec1">¿Quien fue Elliot Smith?</h2>
@@ -78,9 +85,67 @@
             Smith luchó contra la depresión, el alcoholismo y la drogadicción durante muchos años, y estos temas fueron habitualmente tratados en las letras de sus canciones. Murió en 2003, a los 34 años, de dos puñaladas en el pecho. Las circunstancias de su muerte no fueron totalmente esclarecidas en la autopsia.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Jkqmo4j-wVA?si=B9L1Vv9wbI1n2Gz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
+        <h2 id="sec1">Opiniones</h2>
     </article>
+    <!-- Grid System BS 5.3 Inicio -->
+        <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-2">
+                <h3>Fragmento de Reseña Por Nicolás Pichersky - 27/10/2020</h3>
+              </div>
+              <div class="col-md-auto">
+                <p></p>El comienzo es con “Needle in the hay’’, la clave de todo: el canto murmurado de Elliott, su voz doblada al filo de la muerte y la búsqueda de belleza, como “aguja en el pajar” (needle in the hay). La canción la utilizaría Wes Anderson, esa suerte de Elliott Smith del cine, en The Royal Tenenbaums para una impactante y a la vez poética escena de suicidio. “Clementine” está basada en la canción tradicional folk “Oh My Darling, Clementine” (la misma que cantaba la afásica Kate Winslet / Clementine en Eterno resplandor de una mente sin recuerdos). Más adelante “Coming up roses” y su glorioso solo de guitarra tan George Harrison y la devastadora “The White lady loves you more”. 
+    
+                Las letras de Smith acusan una sensación de desesperación: ‘no necesitaría un héroe, si no me sintiera como un cero absoluto” en “Good to go”. Pero tampoco se priva del humor o de lo agridulce (como el cine de Anderson): “me ves sonreír, pero creés que es un ceño fruncido, en un rostro invertido” (en la canción “St. Ides heaven’’). Y como en el cancionero adulto de María Elena Walsh ("Mírenme, soy feliz, entre las hojas que cantan…"), en el jardín de canciones de Elliott Smith también florecen frases soleadas con melodías tristísimas, compuestas en acordes menores. Letras finas que nunca abandonaría, como luego en “Can’t make a sound”, del disco Figure 8 (un guiño a la aniñada cantante de jazz Blossom Dearie): “Me he convertido en una película muda, el héroe asesinó al payaso y yo sigo sin poder hacer un solo sonido”. O la canción ‘’Miss Misery”, parte banda de sonido de Good will hunting, que lo llevaría a su gran introducción mediática en los Oscar en 1998. Así como Paul Simon (con quien tanto lo comparaba el periodismo) cantó para para su generación “Hola oscuridad, mi vieja amiga” en ‘’Sound of silence’’, o Jim Morrison su “este es el fin, mi único amigo… el fin” en “The end’’; Smith, incómodo y desconcertado, pero acaso más confesional, haría lo mismo coreando su “¿Me extrañas, señorita Miseria?”. Además, el vinilo extra de esta edición, Live at Umbra Penumbra 1994, documenta su grabación más antigua como solista, y sobre todo revela una obra cuya influencia sigue expandiéndose. 
+                <a href="https://www.zivals.com.ar/nota/elliott+smith++expanded+25th+anniversary+edition">Lee el articulo original</a>
+              </div>
+              <div class="col col-lg-2">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+              </div>
+              <div class="col-md-auto">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pAP3sYaaBv4?si=K0D_W2xFk_LLALjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="videoelliott"></iframe>
+              </div>
+              <div class="col col-lg-2">
+              </div>
+            </div>
+          </div>
+    <!-- Grid System BS 5.3 -->
+          <article>
+            <h2 id="sec1">galeria</h2>
+          </article>
+        <div class="galeria">
+            <div class="item item1">
+                <img src="/Resources/img es/galeria1.jpg" alt="galeria1">
+            </div>
+            <div class="item item2">
+                <img src="/Resources/img es/galeria2.jpg" alt="galeria2">
+            </div>
+            <div class="item item3">
+                <img src="/Resources/img es/galeria4.jpg" alt="galeria3">
+            </div> 
+            <div class="item item4">
+                <img src="/Resources/img es/2.jpg" alt="galeria4">
+            </div>
+            <div class="item item5">
+                <img src="/Resources/img es/galeria5.jpg" alt="galeria5">
+            </div>
+            <div class="item item6">
+                <img src="/Resources/img es/galeria6.webp" alt="galeria6">
+            </div>
+            <div class="item item7">
+                <img src="/Resources/img es/galeria7.jpg" alt="galeria7">
+            </div>
+            <div class="item item8">
+                <img src="/Resources/img es/galeria8.jpg" alt="galeria8">
+            </div>
+        </div>
+    
+    
     <footer>
-        <p>Todos los derechos son reservados por copyright</p>
+        <p>@Todos los derechos son reservados por copyright</p>
         <div class="redes">
             <a href="https://www.facebook.com/">
                 <i class="fa-brands fa-facebook"></i>
@@ -93,7 +158,7 @@
             </a>
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
