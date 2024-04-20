@@ -169,11 +169,9 @@ footer{
 }
 
 .discos{
-    border: 1px;
     display: flex;
-    width: 265px;
-    margin: 0 20px;
-    padding: 20px, 20px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .section-albumes{
