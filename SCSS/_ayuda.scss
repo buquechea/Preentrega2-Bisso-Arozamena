@@ -1,19 +1,23 @@
+@mixin dt{
+    display: flex;
+    text-align: center;
+}
+
 .input0 {
-    color: black;
+    color: $color-negro;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include dt;
+    justify-content: $centrar;
 }
 
 .form0 {
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(240, 237, 237, 0.73);
+    box-shadow: 0 0 20px $color-gris;
     border-radius: 20px;
-    text-align: center;
+    text-align: $centrar;
     width: 340px;
-    background-color: white;
+    background-color: $color-blanco;
 }
 
 .input-ayuda {
@@ -45,13 +49,12 @@ textarea {
 
 .privacidad {
     margin-bottom: 30px;
-    display: flex;
+    @include dt;
     justify-content: space-between;
-    text-align: center;
 }
 
 input.primaryContained:hover {
-    background-color: grey;
+    background-color: $color-gris;
 }
 
 .section-ayuda {

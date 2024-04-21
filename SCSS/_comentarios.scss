@@ -1,20 +1,23 @@
-.comentarios {
-    color: rgb(190, 184, 184);
+@mixin tp{
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+}
+
+.comentarios {
+    color: $color-gris;
+    @include tp;
 }
 
 .comentarios1 {
-    color: white;
-    text-align: center;
-    padding: 10px;
+    color: $color-blanco;
+    @include tp;
     text-decoration: underline;
 }
 
 .container {
     max-width: 640px;
     margin: 30px auto;
-    background: white;
+    background: $color-blanco;
     border-radius: 8px;
     padding: 20px;
 }
@@ -26,7 +29,7 @@
 
 .commentClicked {
     min-height: 0px;
-    border: 1px solid white;
+    border: 1px solid $color-blanco;
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -34,7 +37,7 @@
 .container textarea {
     width: 200%;
     border: none;
-    background: white;
+    background: $color-blanco;
     padding: 5px 10px;
     height: 50%;
     border-radius: 5px 5px 0px 0px;
@@ -44,7 +47,7 @@
 }
 
 button.primaryContained:hover {
-    background: grey;
+    background: $color-gris;
 }
 
 .section-comentarios {

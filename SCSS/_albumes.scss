@@ -1,14 +1,18 @@
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .titulo {
-    text-align: center;
-    color: white;
+    text-align: $centrar;
+    color: $color-blanco;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 50px;
     text-decoration: underline;
 }
 
 .discos {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex;
     margin: 20px;
 }
 
