@@ -1,0 +1,59 @@
+.input0 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form0 {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(240, 237, 237, 0.73);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    background-color: white;
+}
+
+.input-ayuda {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 20px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    border: 2px solid;
+    outline: none;
+}
+
+.privacidad {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+input.primaryContained:hover {
+    background-color: grey;
+}
+
+.section-ayuda {
+    padding: 50px;
+}

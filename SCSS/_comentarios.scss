@@ -1,0 +1,52 @@
+.comentarios {
+    color: rgb(190, 184, 184);
+    text-align: center;
+    padding: 5px;
+}
+
+.comentarios1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 640px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.comment {
+    display: block;
+    transition: all 1s;
+}
+
+.commentClicked {
+    min-height: 0px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.container textarea {
+    width: 200%;
+    border: none;
+    background: white;
+    padding: 5px 10px;
+    height: 50%;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 2px solid #016BA8;
+    transition: all 0.5s;
+    margin-top: 15px;
+}
+
+button.primaryContained:hover {
+    background: grey;
+}
+
+.section-comentarios {
+    padding: 50px 0 100px 0;
+}

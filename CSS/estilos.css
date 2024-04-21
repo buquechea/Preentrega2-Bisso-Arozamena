@@ -1,368 +1,326 @@
-/* index html */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-
-header{
-    background-color: gray;
-    height: 70px;
-    font-size: 25px;
-    font-family: 'HeroKing';
-}
-
-.bg-body-tertiary{
-    background-color: gray !important;
-}
-
 
 @font-face {
-    font-family: 'HeroKing';
-    src: url(../Resources/fuentes/Heroking-Regular.ttf);
-    font-weight: bold;
-    font-style: bold;
+  font-family: "HeroKing";
+  src: url(../Resources/fuentes/Heroking-Regular.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+header {
+  background-color: gray;
+  height: 70px;
+  font-size: 25px;
+  font-family: "HeroKing";
 }
 
-.inicio{
-    float: left;
-}
-
-.inicio span{
-    color: white;
-    font-weight: bold;
-}
-
-.barra{
-    float: right
-}
-
-.barra ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.barra a{
-    text-decoration: none;
-    color: black;
-}
-
-a{
-    text-decoration: none;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-article{
-    color:white;
-}
-
-h2{
-    background-color: gray;
-    text-transform: uppercase;
-    padding: 20px;
-    font-family: 'HeroKing';
-    font-size: 25px;
-}
-
-.video{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.articulo{
-    width: 700px;
-}
-
-footer{
-    background-color: rgb(98, 98, 98);
-    width: 100%;
-    color: black;
-    float: inline-end;
-    text-align: center;
-    padding: 20px;
-    font-family: 'HeroKing';
-    font-size: 25px;
-}
-
-.redes a{
-    text-decoration: none;
-    color: whitesmoke;
-    letter-spacing: 5px;
-}
-
-.galeria{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap:15px;
-    grid-template-rows: repeat(8, 200px);
-}
-
-.item{
-    background-size: cover;
-    background-position: center;
-}
-
-.navbar-brand{
-    font-size: 25px;
+.bg-body-tertiary {
+  background-color: gray !important;
 }
 
 .navbar {
-    z-index: 5;
-    padding: 15px;
+  z-index: 5;
+  padding: 15px;
 }
 
-.row{
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  grid-template-rows: repeat(8, 200px);
 }
 
+.item {
+  background-size: cover;
+  background-position: center;
+}
 
-/* login html */
-.formulario{
-    color: black;
+.navbar-brand {
+  font-size: 25px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  color: white;
+}
+
+h2 {
+  background-color: gray;
+  text-transform: uppercase;
+  padding: 20px;
+  font-family: "HeroKing";
+  font-size: 25px;
+}
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.articulo {
+  width: 700px;
+}
+
+footer {
+  background-color: rgb(98, 98, 98);
+  width: 100%;
+  color: black;
+  float: inline-end;
+  text-align: center;
+  padding: 20px;
+  font-family: "HeroKing";
+  font-size: 25px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: whitesmoke;
+  letter-spacing: 5px;
+}
+
+@media only screen and (min-width: 500px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+  .articulo {
     padding: 20px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(240, 237, 237, 0.73);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .section-login {
+    margin: 200px;
+  }
 }
-
-.section-login{
+@media only screen and (min-width: 350px) {
+  .section-comentarios {
     padding: 100px;
+  }
 }
-
-/* albumes html */
-
-.titulo{
-    text-align: center;
-    color:white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+@media only screen and (min-width: 800px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+  .item2 {
+    grid-column: 2/4;
+  }
+  .item3 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+}
+@media only screen and (min-width: 1010px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .item2 {
+    grid-column: 2/3;
+  }
+  .item4 {
+    grid-column: 3/5;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .videoelliott {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .videoelliott {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (max-width: 1350px) {
+  .section-login {
     padding: 50px;
-    text-decoration: underline;
+  }
+}
+@media only screen and (max-width: 503px) {
+  .formulario {
+    width: 400px;
+  }
+  .section-login {
+    padding: 0 0 400px 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .formulario {
+    width: 300px;
+  }
+}
+.formulario {
+  color: black;
+  padding: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(240, 237, 237, 0.73);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.discos{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
+.section-login {
+  padding: 100px;
 }
 
-.section-albumes{
-    padding: 0 0 50px 0;
+.titulo {
+  text-align: center;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 50px;
+  text-decoration: underline;
 }
 
-/* comentarios html */
-.comentarios{
-    color: rgb(190, 184, 184);
-    text-align: center;
-    padding: 5px;
+.discos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
-.comentarios1{
-    color: white;
-    text-align: center;
-    padding: 10px;
-    text-decoration: underline;
+.section-albumes {
+  padding: 0 0 50px 0;
 }
 
-.container{
-	max-width: 640px;
-	margin: 30px auto;
-	background: white;
-	border-radius: 8px;
-	padding: 20px;
+.comentarios {
+  color: rgb(190, 184, 184);
+  text-align: center;
+  padding: 5px;
 }
 
-.comment{
-	display: block;
-	transition: all 1s;
+.comentarios1 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
 }
+
+.container {
+  max-width: 640px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.comment {
+  display: block;
+  transition: all 1s;
+}
+
 .commentClicked {
-	min-height: 0px;
-	border: 1px solid white;
-	border-radius: 5px;
-	padding: 5px 10px
+  min-height: 0px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .container textarea {
-	width: 200%;
-	border: none;
-	background: white;
-	padding: 5px 10px;
-	height: 50%;
-	border-radius: 5px 5px 0px 0px;
-	border-bottom: 2px solid #016BA8;
-	transition: all 0.5s;
-	margin-top: 15px;
+  width: 200%;
+  border: none;
+  background: white;
+  padding: 5px 10px;
+  height: 50%;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 2px solid #016BA8;
+  transition: all 0.5s;
+  margin-top: 15px;
 }
 
 button.primaryContained:hover {
-	background: grey;
+  background: grey;
 }
 
-.section-comentarios{
-    padding: 50px 0 100px 0;
+.section-comentarios {
+  padding: 50px 0 100px 0;
 }
 
-/* ayuda html */
-.input0{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.input0 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.form0{
-    padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(240, 237, 237, 0.73);
-    border-radius: 20px;
-    text-align: center;
-    width: 340px;
-    background-color: grey;
+.form0 {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(240, 237, 237, 0.73);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  background-color: white;
 }
 
-.input-ayuda{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.input-ayuda {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
 }
 
-h1{
-    font-size: 35px;
-    padding: 20px;
+h1 {
+  font-size: 35px;
+  padding: 20px;
 }
 
-label{
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
+label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-input, textarea{
-    padding: 17px 25px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    border: 2px solid;
-    outline: none;
+input,
+textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: 2px solid;
+  outline: none;
 }
 
-.privacidad{
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+.privacidad {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
-input.primaryContained:hover{
-    background-color: grey;
+input.primaryContained:hover {
+  background-color: grey;
 }
 
-.section-ayuda{
-    padding: 50px;
+.section-ayuda {
+  padding: 50px;
 }
 
-/* Media Queries */
-@media only screen and (min-width:500px){
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
-    }
-    .articulo{
-        padding: 20px;
-    }
-    .section-login{
-        margin: 200px;
-    }
-}
-
-@media only screen and (min-width:350px){
-    .section-comentarios{
-        padding: 100px;
-    }
-}
-
-@media only screen and (min-width:800px){
-    .galeria{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 200px);
-    }
-    .item2{
-        grid-column: 2/4;
-    }
-    .item3{
-        grid-column: 1/3;
-        grid-row: 2/4;
-    }
-}
-
-@media only screen and (min-width:1010px){
-    .galeria{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .item2{
-        grid-column: 2/3;
-    }
-    .item4{
-        grid-column: 3/5;
-        background-size: cover;
-        background-position: center;
-    }
-}
-
-@media (min-width: 992px){
-    .col-lg-2{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:640px){
-    .videoelliott{
-        width: auto;
-        height: auto;
-    }
-}
-
-@media only screen and (max-width:350px){
-    .videoelliott{
-        width: 250px;
-        height: 150px;
-    }
-}
-
-@media (max-width: 1350px){
-    .section-login{
-        padding: 50px;
-    }
-}
-
-@media only screen and (max-width:503px){
-    .formulario{
-        width: 400px;
-    }
-    .section-login{
-        padding: 0 0 400px 0;
-    }
-}
-
-@media only screen and (max-width:420px){
-    .formulario{
-        width: 300px;
-    }
-}
+/*# sourceMappingURL=estilos.css.map */
