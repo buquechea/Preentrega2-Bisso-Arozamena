@@ -1,31 +1,34 @@
-@mixin dt{
+@mixin dt {
     display: flex;
     text-align: center;
 }
 
-.input0 {
-    color: $color-negro;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
-    @include dt;
-    justify-content: $centrar;
+.section-ayuda {
+    .input0 {
+        color: $color-negro;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+        @include dt;
+        justify-content: $centrar;
+    }
+
+    .form0 {
+        padding: 50px 55px;
+        box-shadow: 0 0 20px $color-gris;
+        border-radius: 20px;
+        text-align: $centrar;
+        width: 340px;
+        background-color: $color-blanco;
+    }
+
+    .input-ayuda {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+    }
 }
 
-.form0 {
-    padding: 50px 55px;
-    box-shadow: 0 0 20px $color-gris;
-    border-radius: 20px;
-    text-align: $centrar;
-    width: 340px;
-    background-color: $color-blanco;
-}
-
-.input-ayuda {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 20px;
-}
 
 h1 {
     font-size: 35px;

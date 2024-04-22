@@ -1,17 +1,31 @@
-@mixin tp{
+@mixin tp {
     text-align: center;
     padding: 10px;
 }
 
-.comentarios {
-    color: $color-gris;
-    @include tp;
-}
+.section-comentarios {
+    .comentarios {
+        color: $color-gris;
+        @include tp;
+    }
 
-.comentarios1 {
-    color: $color-blanco;
-    @include tp;
-    text-decoration: underline;
+    .comentarios1 {
+        color: $color-blanco;
+        @include tp;
+        text-decoration: underline;
+    }
+
+    .comment {
+        display: block;
+        transition: all 1s;
+    }
+
+    .commentClicked {
+        min-height: 0px;
+        border: 1px solid $color-blanco;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
 }
 
 .container {
@@ -20,18 +34,7 @@
     background: $color-blanco;
     border-radius: 8px;
     padding: 20px;
-}
 
-.comment {
-    display: block;
-    transition: all 1s;
-}
-
-.commentClicked {
-    min-height: 0px;
-    border: 1px solid $color-blanco;
-    border-radius: 5px;
-    padding: 5px 10px;
 }
 
 .container textarea {

@@ -210,17 +210,26 @@ footer {
   padding: 0 0 50px 0;
 }
 
-.comentarios {
+.section-comentarios .comentarios {
   color: grey;
   text-align: center;
   padding: 10px;
 }
-
-.comentarios1 {
+.section-comentarios .comentarios1 {
   color: white;
   text-align: center;
   padding: 10px;
   text-decoration: underline;
+}
+.section-comentarios .comment {
+  display: block;
+  transition: all 1s;
+}
+.section-comentarios .commentClicked {
+  min-height: 0px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .container {
@@ -229,18 +238,6 @@ footer {
   background: white;
   border-radius: 8px;
   padding: 20px;
-}
-
-.comment {
-  display: block;
-  transition: all 1s;
-}
-
-.commentClicked {
-  min-height: 0px;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 5px 10px;
 }
 
 .container textarea {
@@ -263,7 +260,7 @@ button.primaryContained:hover {
   padding: 50px 0 100px 0;
 }
 
-.input0 {
+.section-ayuda .input0 {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -271,8 +268,7 @@ button.primaryContained:hover {
   text-align: center;
   justify-content: center;
 }
-
-.form0 {
+.section-ayuda .form0 {
   padding: 50px 55px;
   box-shadow: 0 0 20px grey;
   border-radius: 20px;
@@ -280,8 +276,7 @@ button.primaryContained:hover {
   width: 340px;
   background-color: white;
 }
-
-.input-ayuda {
+.section-ayuda .input-ayuda {
   display: flex;
   flex-direction: column;
   text-align: left;
