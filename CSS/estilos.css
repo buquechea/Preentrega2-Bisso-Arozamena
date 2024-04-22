@@ -323,4 +323,13 @@ input.primaryContained:hover {
   padding: 50px;
 }
 
+.item {
+  transition: 4s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+
 /*# sourceMappingURL=estilos.css.map */

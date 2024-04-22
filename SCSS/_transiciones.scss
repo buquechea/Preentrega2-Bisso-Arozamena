@@ -1,0 +1,8 @@
+.item{
+    transition: 4s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
